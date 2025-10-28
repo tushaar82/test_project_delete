@@ -113,6 +113,64 @@ small {
     text-decoration: underline;
 }
 
+/* Remember Me */
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.remember-me input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+}
+
+.remember-me label {
+    color: #666;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Demo Credentials */
+.demo-credentials {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.demo-credentials p {
+    margin: 5px 0;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.demo-credentials strong {
+    color: #333;
+}
+
+.demo-credentials code {
+    background: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    color: #667eea;
+}
+
+/* Confetti Canvas */
+#confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 500px) {
     .container {
@@ -121,5 +179,9 @@ small {
     
     h1 {
         font-size: 1.8rem;
+    }
+    
+    .demo-credentials {
+        font-size: 0.8rem;
     }
 }
